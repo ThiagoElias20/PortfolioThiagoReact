@@ -1,0 +1,71 @@
+
+.portfolio .inputs button#but-html {
+  border: 2px solid #E34E26;
+}
+
+.portfolio .inputs button#but-css {
+  border: 2px solid #0b3ffa;
+}
+
+.portfolio .inputs button#but-javascript {
+  border: 2px solid #dbb700;
+}
+
+.portfolio .inputs button#but-react {
+  border: 2px solid #00acca;
+}
+
+.portfolio .inputs button#but-wordpress {
+  border: 2px solid #1B769C;
+}
+
+.portfolio .inputs button#but-powerapps {
+  border: 2px solid #932C89;
+}
+
+.portfolio .inputs button#but-html:hover {
+  border: 5px solid #E34E26;
+}
+.portfolio .inputs button#but-css:hover {
+  border: 5px solid #0b3ffa;
+}
+.portfolio .inputs button#but-javascript:hover {
+  border: 5px solid #dbb700;
+}
+.portfolio .inputs button#but-react:hover {
+  border: 5px solid #00acca;
+}
+.portfolio .inputs button#but-wordpress:hover {
+  border: 5px solid #1B769C;
+}
+.portfolio .inputs button#but-powerapps:hover {
+  border: 5px solid #932C89;
+}
+
+.portfolio .inputs button#but-html.active {
+  background-color: #E34E26;
+}
+
+.portfolio .inputs button#but-css.active {
+  background-color: #0b3ffa;
+}
+
+.portfolio .inputs button#but-javascript.active {
+  background-color: #dbb700;
+}
+
+.portfolio .inputs button#but-react.active {
+  background-color: #00acca;
+}
+
+.portfolio .inputs button#but-wordpress.active {
+  background-color: #1B769C;
+}
+
+.portfolio .inputs button#but-powerapps.active {
+  background-color: #932C89;
+}
+
+.portfolio .inputs input {
+  border-radius: 10px;
+}

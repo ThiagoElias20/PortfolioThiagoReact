@@ -1,0 +1,114 @@
+:root {
+  --html: #F16529;
+  --css: #039BE5;
+  --js: #FFD600;
+  --react: #53C1DE;
+  --git: #F4511E;
+  --wp: #0F5DA2;
+}
+
+.Skills {
+  display: flex;
+  flex-direction: column;
+  /* padding-left: 20vw;
+  padding-right: 20vw; */
+  padding-bottom: 50px;
+  background-color: #e5e5f7;
+  background-size: 20px 20px;
+  background-image:  repeating-linear-gradient(to right, rgba(80, 78, 207, 0.5), rgba(80, 78, 207, 0.5) 1px, rgba(229, 229, 247, 0.5) 1px, rgba(229, 229, 247, 0.5));
+}
+.Skills h1 {
+  color: rgb(25, 24, 39);;
+}
+.Skills h1 span{
+  color: #504ECF;
+}
+.Skills .SkillsItens {
+  display: flex;
+  justify-content: space-between;
+}
+.Skills .SkillsItens .SkillsItem {
+  height: 220px;
+  width: 9vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  margin: 0px;
+  border-radius: 10px;
+  color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  font-weight: bold;
+}
+.Skills .SkillsItens .SkillsItem:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+.Skills .SkillsItens .SkillsItem img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.Skills .SkillsItens .SkillsItem::before {
+  content: '';
+  position: absolute;
+  z-index: -2;
+  left: -50%;
+  top: -50%;
+  width: 200%;
+  height: 200%;
+  background-color: #399953;
+  background-repeat: no-repeat;
+  background-size: 50% 50%, 50% 50%;
+  background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+  animation: rotate 8s linear infinite;
+  border-radius: 15px;
+}
+
+.Skills .SkillsItens .SkillsItem::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  left: 6px;
+  top: 6px;
+  width: calc(100% - 12px);
+  height: calc(100% - 12px);
+  background: #19191E;
+  border-radius: 10px;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+.Skills .SkillsItens .SkillsItem#html::before {
+  background-image: linear-gradient(#19191E, #19191E), linear-gradient(#19191E, #19191E), linear-gradient(var(--html), var(--html)), 
+  linear-gradient(var(--html), var(--html));
+}
+.Skills .SkillsItens .SkillsItem#css::before {
+  background-image: linear-gradient(#19191E, #19191E), linear-gradient(#19191E, #19191E), linear-gradient(var(--css), var(--css)), 
+  linear-gradient(var(--css), var(--css));
+}
+.Skills .SkillsItens .SkillsItem#js::before {
+  background-image: linear-gradient(#19191E, #19191E), linear-gradient(#19191E, #19191E), linear-gradient(var(--js), var(--js)), 
+  linear-gradient(var(--js), var(--js));
+}
+.Skills .SkillsItens .SkillsItem#react::before {
+  background-image: linear-gradient(#19191E, #19191E), linear-gradient(#19191E, #19191E), linear-gradient(var(--react), var(--react)), 
+  linear-gradient(var(--react), var(--react));
+}
+.Skills .SkillsItens .SkillsItem#git::before {
+  background-image: linear-gradient(#19191E, #19191E), linear-gradient(#19191E, #19191E), linear-gradient(var(--git), var(--git)), 
+  linear-gradient(var(--git), var(--git));
+}
+.Skills .SkillsItens .SkillsItem#wp::before {
+  background-image: linear-gradient(#19191E, #19191E), linear-gradient(#19191E, #19191E), linear-gradient(var(--wp), var(--wp)), 
+  linear-gradient(var(--wp), var(--wp));
+}

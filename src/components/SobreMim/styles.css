@@ -1,0 +1,53 @@
+.SobreMim {
+  display: flex;
+  /* padding-left: 20vw;
+  padding-right: 20vw; */
+  padding-bottom: 150px;
+}
+
+.SobreMim .foto {
+  display: flex;
+  flex-direction: column;
+}
+.SobreMim .foto img {
+  width: 200px;
+  height: 200px;
+  margin-right: 50px;
+  border-radius: 10px;
+  object-position: left;
+  object-fit: cover;
+}
+
+.SobreMim .desc {
+  color: #191827;
+}
+.SobreMim .desc h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+.SobreMim .desc p {
+  font-size: 1.1rem;
+}
+.SobreMim .desc a {
+  display: flex;
+  color: white;
+  background-color: #504ECF;
+  cursor: pointer;
+  border: 0;
+  height: 40px;
+  width: 170px;
+  font-size: 1vw;
+  font-weight: 600;
+  border-radius: 50px;
+  text-decoration: none;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.SobreMim .desc a img {
+  height: 24px;
+  width: 24px;
+  margin-left: 5px;
+}

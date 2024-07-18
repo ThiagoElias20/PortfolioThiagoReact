@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+body {
+  margin: 0 auto;
+  background-color: #ffffff;
+  font-family: "Source Sans 3", sans-serif;
+}
+
+/* Layout para a apresentação */
+.apresentacao {
+  display: flex;
+  align-items: center;
+  height: 90vh;
+  justify-content: space-between;
+  padding: 0 5vw; /* Adiciona padding horizontal */
+}
+
+/* Estilo para os textos da apresentação */
+.apresentacao h3 {
+  font-size: 1.9vw;
+  margin: 0;
+}
+
+.apresentacao h2 {
+  font-size: 4vw;
+  margin: 0;
+}
+
+.apresentacao h2 span {
+  color: #504ECF;
+}
+
+.apresentacao p {
+  font-size: 1vw;
+  margin: 0;
+  color: #908c94;
+  margin-bottom: 15px;
+  font-weight: 400;
+}
+
+/* Estilo para a imagem da apresentação */
+.apresentacao .apresentacao-right img {
+  width: 30vw;
+  position: relative;
+  object-fit: cover;
+  align-self: center;
+}
+
+/* Estilo para o conteúdo à esquerda da apresentação */
+.apresentacao .apresentacao-left {
+  max-width: 550px;
+}
+
+/* Estilo para os links sociais */
+.apresentacao .socials {
+  margin-bottom: 30px;
+}
+
+.apresentacao .socials a {
+  text-decoration: none;
+}
+
+/* Estilo para o conteúdo à direita da apresentação */
+.apresentacao .apresentacao-right {
+  position: relative;
+  width: fit-content;
+  padding-left: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Estilo para as formas líquidas */
+.apresentacao .apresentacao-right .liquid-shape:nth-child(1) {
+  height: 15vw;
+  width: 15vw;
+  border-radius: 33% 69% 18% 82% / 56% 58% 27% 45%;
+  background-color: #504ECF;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  animation: liquid-shape1 10s ease-in-out infinite;
+}
+
+.apresentacao .apresentacao-right .liquid-shape:nth-child(2) {
+  height: 10vw;
+  width: 10vw;
+  border-radius: 32% 80% 55% 66% / 18% 39% 80% 46%;
+  background-color: #504ECF;
+  position: absolute;
+  animation: liquid-shape2 10s ease-in-out infinite;
+  top: 0;
+  right: 0;
+}
+
+/* Animações das formas líquidas */
+@keyframes liquid-shape1 {
+  0%, 100% {
+    border-radius: 70% 30% 72% 28% / 27% 61% 39% 73%;
+  }
+  50% {
+    border-radius: 77% 23% 54% 46% / 40% 38% 62% 60%;
+  }
+}
+
+@keyframes liquid-shape2 {
+  0%, 100% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+  }
+}
+
+/* Estilo para os botões */
+.apresentacao .buttons button {
+  width: 6.5vw;
+  height: 2vw;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  background-color: #504ECF;
+  font-size: 0.7vw;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+  margin-right: 3px;
+}
+
+/* Consultas de mídia para responsividade */
+
+/* Estilo para telas pequenas */
+@media (max-width: 1024px) {
+  .apresentacao {
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+    padding: 20px;
+  }
+  
+  .apresentacao .apresentacao-right img {
+    width: 80vw;
+    margin: 20px 0;
+  }
+  
+  .apresentacao .apresentacao-left {
+    max-width: 100%;
+  }
+  
+  .apresentacao h3 {
+    font-size: 3vw;
+  }
+  
+  .apresentacao h2 {
+    font-size: 6vw;
+  }
+  
+  .apresentacao p {
+    font-size: 3vw;
+  }
+  
+  .apresentacao .buttons button {
+    width: 50vw;
+    height: 5vw;
+    font-size: 2vw;
+  }
+  
+  .apresentacao .apresentacao-right {
+    padding-left: 0;
+  }
+  
+  .apresentacao .apresentacao-right .liquid-shape:nth-child(1),
+  .apresentacao .apresentacao-right .liquid-shape:nth-child(2) {
+    display: none; /* Esconde as formas líquidas em telas pequenas */
+  }
+}
+
+/* Estilo para telas muito pequenas */
+@media (max-width: 480px) {
+  .apresentacao h3 {
+    font-size: 4vw;
+  }
+  
+  .apresentacao h2 {
+    font-size: 8vw;
+  }
+  
+  .apresentacao p {
+    font-size: 4vw;
+  }
+  
+  .apresentacao .buttons button {
+    width: 70vw;
+    height: 7vw;
+    font-size: 3vw;
+  }
+}

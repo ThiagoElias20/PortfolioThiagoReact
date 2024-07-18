@@ -1,0 +1,144 @@
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  width: 25vw;
+}
+.projeto-img-desc {
+  display: flex;
+  text-align: left;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  background-color: rgb(255, 255, 255);
+  padding: 15px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+  border-radius: 15px;
+}
+
+@keyframes enter-animation {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .projeto-img-desc {
+    animation: enter-animation 0.8s 1;
+  }
+}
+
+.projeto-img-desc .projeto-desc {
+  width: 60%;
+  margin-left: 50px;
+}
+.projeto-img-desc .projeto-desc p {
+  width: 90%;
+}
+.projeto-img-desc .projeto-desc .techs-container {
+  display: flex;
+}
+.projeto-img-desc .projeto-desc .techs-container .techs {
+  background-color: #19191E;
+  color: #ffffff;
+  margin-right: 10px;
+  padding: 0px 10px;
+  border-radius: 5px;
+}
+.projeto-img-desc .projeto-desc .techs {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.projeto-img-desc .projeto-desc .techs img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+/*Imagem de cada projeto com border animada*/
+
+.projeto-img-desc .projeto-img {
+  position: relative;
+  z-index: 0;
+  width: 25vw;
+  height: 15vw;
+  border-radius: 15px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projeto-img-desc .projeto-img img {
+  height: 96%;
+  width: 97.2%;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 10px;
+  position: relative;
+  z-index: 1;
+}
+
+.projeto-img-desc .projeto-img::before {
+  content: '';
+  position: absolute;
+  z-index: -2;
+  left: -50%;
+  top: -50%;
+  width: 200%;
+  height: 200%;
+  background-color: #399953;
+  background-repeat: no-repeat;
+  background-size: 50% 50%, 50% 50%;
+  background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+  background-image: linear-gradient(#504ECF, #504ECF), linear-gradient(#504ECF, #504ECF), linear-gradient(#7978e6, #7978e6), linear-gradient(#7978e6, #7978e6);
+  animation: rotate 30s linear infinite;
+  border-radius: 15px;
+}
+
+.projeto-img-desc .projeto-img::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  left: 6px;
+  top: 6px;
+  width: calc(100% - 12px);
+  height: calc(100% - 12px);
+  background: white;
+  border-radius: 10px;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+/*FIM Imagem de cada projeto com border animada FIM*/
+
+.projeto-img-desc .projeto-desc .buts {
+  display: flex;
+}
+.projeto-img-desc .projeto-desc .buts a {
+  display: flex;
+  color: white;
+  background-color: #504ECF;
+  cursor: pointer;
+  border: 0;
+  height: 40px;
+  width: 170px;
+  font-size: 1vw;
+  font-weight: 600;
+  border-radius: 50px;
+  text-decoration: none;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
