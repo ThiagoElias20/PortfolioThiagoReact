@@ -2,3 +2,40 @@
   padding-left: 19vw;
   padding-right: 19vw;
 }
+
+@media (max-width: 1345px) {
+  .App .Conteudo > * {
+    padding-left: 15vw;
+    padding-right: 15vw;
+  }
+
+  .Skills .SkillsItens .SkillsItem {
+    width: 10.5vw;
+  }
+}
+
+@media (max-width: 1024px) {
+  .App .Conteudo > * {
+    padding-left: 15vw;
+    padding-right: 15vw;
+  }
+
+  
+  .Skills .SkillsItens {
+    justify-content: center; 
+    flex-wrap: wrap;
+  }
+  .Skills .SkillsItens .SkillsItem {
+    width: 30%;
+    margin: 10px;
+  }
+  
+}
+
+@media (max-width: 480px) {
+  .App .Conteudo > * {
+    padding-left: 15vw;
+    padding-right: 15vw;
+  }
+  
+}
