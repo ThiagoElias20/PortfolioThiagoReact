@@ -20,6 +20,9 @@
     padding-right: 15vw;
   }
 
+  .SobreMim {
+    padding-bottom: 75px;
+  }
   
   .Skills .SkillsItens {
     justify-content: center; 
@@ -29,13 +32,84 @@
     width: 30%;
     margin: 10px;
   }
+
+  .portfolio {
+    max-width: 70vw;
+  }
+  .portfolio .inputs {
+    justify-content: space-between;
+  }
+  .portfolio .inputs button {
+    max-width: 150px;
+    min-width: 125px;
+    font-size: 0.7em;
+    margin-right: 0;
+  }
+
+  .projeto-img-desc {
+    align-items: center;
+  }
+  .projeto-img-desc .projeto-img {
+    height: 30vw;
+    border-radius: 0;
+  }
+  .projeto-img-desc .projeto-desc {
+    width: 90%;
+    margin-top: 10px;
+    margin-left: 0;
+  }
+  .projeto-img-desc .projeto-desc h2 {
+    margin-bottom: 8px;
+  }
+  .projeto-img-desc .projeto-desc p {
+    margin-top: 0;
+  }
+  .projeto-img-desc .projeto-desc .techs-container {
+    flex-wrap: wrap;
+  }
   
 }
 
 @media (max-width: 480px) {
   .App .Conteudo > * {
-    padding-left: 15vw;
-    padding-right: 15vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+
+  .SobreMim {
+    flex-direction: column;
+  }
+
+  .Skills {
+    padding: 100px 0px 50px 0px;
+  }
+  .Skills .SkillsItens .SkillsItem {
+    width: 40%;
   }
   
+  .portfolio {
+    max-width: 80vw;
+  }
+  .portfolio .inputs {
+
+    flex-wrap: wrap;
+  }
+  .portfolio .inputs button {
+    max-width: 150px;
+    min-width: 125px;
+    font-size: 0.8em;
+    margin: 5px 0;
+  }
+  .projeto-img-desc .projeto-img {
+    height: 50vw;
+  }
+}
+
+@media (max-width: 335px) {
+  .portfolio .inputs {
+    justify-content: center;
+  }
+  .portfolio .inputs button {
+    width: 100%;
+  }
 }

@@ -133,7 +133,7 @@ img {
   border: 0;
   height: 40px;
   width: 170px;
-  font-size: 1vw;
+  font-size: 1rem;
   font-weight: 600;
   border-radius: 50px;
   text-decoration: none;
@@ -142,4 +142,3 @@ img {
   align-items: center;
   margin-right: 10px;
 }
-

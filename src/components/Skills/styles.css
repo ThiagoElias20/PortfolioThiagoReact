@@ -12,7 +12,7 @@
   flex-direction: column;
   /* padding-left: 20vw;
   padding-right: 20vw; */
-  padding-bottom: 50px;
+  padding: 50px 0px 50px 0px;
   background-color: #e5e5f7;
   background-size: 20px 20px;
   background-image:  repeating-linear-gradient(to right, rgba(80, 78, 207, 0.5), rgba(80, 78, 207, 0.5) 1px, rgba(229, 229, 247, 0.5) 1px, rgba(229, 229, 247, 0.5));

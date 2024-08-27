@@ -125,9 +125,8 @@ body {
   text-transform: uppercase;
   text-align: center;
   margin-right: 3px;
+  cursor: pointer;
 }
-
-/* Consultas de mídia para responsividade */
 
 
 
@@ -138,6 +137,7 @@ body {
     text-align: center;
     height: auto;
     padding: 20px;
+    margin-bottom: 50px;
   }
   
   .apresentacao .apresentacao-right img {
@@ -147,6 +147,10 @@ body {
   
   .apresentacao .apresentacao-left {
     max-width: 100%;
+  }
+
+  .apresentacao .socials {
+    margin-bottom: 10px;
   }
   
   .apresentacao h3 {
@@ -165,6 +169,7 @@ body {
     width: 50vw;
     height: 5vw;
     font-size: 2vw;
+    margin-top: 10px;
   }
   
   .apresentacao .apresentacao-right {
@@ -193,7 +198,7 @@ body {
   
   .apresentacao .buttons button {
     width: 70vw;
-    height: 7vw;
+    height: 8vw;
     font-size: 3vw;
   }
 }
